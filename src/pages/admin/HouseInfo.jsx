@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Switch, Route, useHistory, Link, useParams } from 'react-router-dom';
 import Person from './Person';
 
-export default function House() {
+export default function HouseInfo() {
     let history = useHistory();
     let { houseId } = useParams();
     const [houseImg, setHouseImg] = useState('https://www.homenayoo.com/wp-content/uploads/2020/06/Grand-V-Home-Bangna.jpg');
@@ -26,7 +26,7 @@ export default function House() {
 
     return (
         <Switch>
-            <Route exact path={`/user/todo/${houseId}`}>
+            <Route exact path={`/admin/search/${houseId}`}>
                 <div className='fullHeight container has-text-white'>
                     <div className='section has-text-centered is-size-5'>
                         <h1 className='title has-text-white is-2'>บ้านเลขที่ {houseId}</h1>
@@ -60,7 +60,7 @@ export default function House() {
                                         <td>B</td>
                                         <td>ไม่มีโรคประจำตัว</td>
                                         <td>
-                                            <Link to={`/user/todo/${houseId}/1`}>
+                                            <Link to={`/admin/search/${houseId}/1`}>
                                                 <button className='button is-link is-small is-pulled-right'>Click</button>
                                             </Link>
                                         </td>
@@ -78,7 +78,7 @@ export default function House() {
                                         <td>B</td>
                                         <td>ไม่มีโรคประจำตัว</td>
                                         <td>
-                                            <Link to={`/user/todo/${houseId}/1`}>
+                                            <Link to={`/admin/search/${houseId}/1`}>
                                                 <button className='button is-link is-small is-pulled-right'>Click</button>
                                             </Link>
                                         </td>
@@ -96,7 +96,7 @@ export default function House() {
                                         <td>B</td>
                                         <td>ป่วย</td>
                                         <td>
-                                            <Link to={`/user/todo/${houseId}/1`}>
+                                            <Link to={`/admin/search/${houseId}/1`}>
                                                 <button className='button is-link is-small is-pulled-right'>Click</button>
                                             </Link>
                                         </td>
@@ -114,7 +114,7 @@ export default function House() {
                                         <td>B</td>
                                         <td>ป่วย</td>
                                         <td>
-                                            <Link to={`/user/todo/${houseId}/1`}>
+                                            <Link to={`/admin/search/${houseId}/1`}>
                                                 <button className='button is-link is-small is-pulled-right'>Click</button>
                                             </Link>
                                         </td>
@@ -188,7 +188,7 @@ export default function House() {
                     </div>
                 </div>
             </Route>
-            <Route path={`/user/todo/:houseId/:id`} component={Person} />
+            <Route path={`/admin/search/:houseId/:id`} component={Person} />
         </Switch>
     );
 }

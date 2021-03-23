@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200&display=swap');
+
 .fullHeight {
     min-height: 100vh;
 }
 
 html {
     background-color: #1c3f70;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
 }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Switch, Route, useHistory, Link, useParams } from 'react-router-dom';
 import Person from './Person';
 
-export default function House() {
+export default function HouseInfo() {
     let history = useHistory();
     let { houseId } = useParams();
     const [houseImg, setHouseImg] = useState('https://www.homenayoo.com/wp-content/uploads/2020/06/Grand-V-Home-Bangna.jpg');
@@ -73,7 +73,7 @@ export default function House() {
                                                 </span>
                                             </span>
                                         </th>
-                                        <td>2</td>
+                                        <td>1</td>
                                         <td>นาง A</td>
                                         <td>B</td>
                                         <td>ไม่มีโรคประจำตัว</td>
@@ -91,7 +91,7 @@ export default function House() {
                                                 </span>
                                             </span>
                                         </th>
-                                        <td>3</td>
+                                        <td>1</td>
                                         <td>นาง A</td>
                                         <td>B</td>
                                         <td>ป่วย</td>
@@ -109,7 +109,7 @@ export default function House() {
                                                 </span>
                                             </span>
                                         </th>
-                                        <td>4</td>
+                                        <td>1</td>
                                         <td>นาง A</td>
                                         <td>B</td>
                                         <td>ป่วย</td>

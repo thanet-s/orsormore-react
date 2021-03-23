@@ -47,7 +47,6 @@ export default function Profile() {
                     <ul className='title box has-text-dark' style={{ opacity: 0.5 }}>
                         <li>นาง A B</li>
                         <li>อายุ 45 ปี</li>
-                        <li>บ้านเลขที่ 13</li>
                         <li>อาชีพ เกษตรกร</li>
                         <li>เป็น อสม.ประจำหมู่บ้าน</li>
                     </ul>

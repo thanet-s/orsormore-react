@@ -26,7 +26,7 @@ export default function Village() {
                 <div className="field has-addons">
                     <div className="control is-expanded">
                         <div className="select is-medium is-fullwidth">
-                            <select name="country" value={villla} onChange={e => setVilla(e.target.value)}>
+                            <select name="villa" value={villla} onChange={e => setVilla(e.target.value)}>
                                 <option value={1}>หมู่ 1</option>
                                 <option value={2}>หมู่ 2</option>
                                 <option value={3}>หมู่ 3</option>
