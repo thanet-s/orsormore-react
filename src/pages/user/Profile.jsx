@@ -1,9 +1,9 @@
 import React from 'react';
-import {useHistory, useRouteMatch} from 'react-router-dom';
+import { useHistory, useRouteMatch } from 'react-router-dom';
 
 export default function Profile() {
     let history = useHistory();
-    let {path} = useRouteMatch();
+    let { path } = useRouteMatch();
 
     const logout = () => {
         history.push('/');
@@ -11,6 +11,10 @@ export default function Profile() {
 
     return (
         <div className='fullHeight container'>
+            <div className='section has-text-centered is-size-5'>
+                <h1 className='title has-text-white is-2'>Profile</h1>
+                <hr />
+            </div>
             <div className="section columns has-text-centered">
                 <div className="column">
                     <button className="button is-large is-warning" onClick={() => history.push(`${path}/village`)}>
@@ -49,7 +53,7 @@ export default function Profile() {
                     </ul>
                 </div>
             </div>
-            <div className='section' style={{paddingBottom: '80px'}}>
+            <div className='section' style={{ paddingBottom: '80px' }}>
                 <button className="is-pulled-right button is-medium is-danger" onClick={logout}>
                     <span className="icon is-small">
                         <i className="fas fa-sign-out-alt"></i>
