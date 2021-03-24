@@ -6,6 +6,7 @@ export default function House() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        history.push('/admin/search/1');
     }
 
     const back = () => {
