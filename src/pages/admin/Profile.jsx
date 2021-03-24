@@ -27,26 +27,6 @@ export default function Profile() {
                     </button>
                 </div>
                 <div className="column">
-                    <button className="button is-large is-warning" onClick={() => history.push(`${path}/village`)}>
-                        <span className="icon is-small">
-                            <i className="fas fa-users"></i>
-                        </span>
-                        <span>
-                            หมู่บ้าน
-                        </span>
-                    </button>
-                </div>
-                <div className="column">
-                    <button className="button is-large is-warning" onClick={() => history.push(`${path}/user`)}>
-                        <span className="icon is-small">
-                            <i className="fas fa-user-friends"></i>
-                        </span>
-                        <span>
-                            อสม.
-                        </span>
-                    </button>
-                </div>
-                <div className="column">
                     <button className="button is-large is-warning" onClick={() => history.push(`${path}/house`)}>
                         <span className="icon is-small">
                             <i className="fas fa-home"></i>
@@ -63,6 +43,26 @@ export default function Profile() {
                         </span>
                         <span>
                             เพิ่มคน
+                        </span>
+                    </button>
+                </div>
+                <div className="column">
+                    <button className="button is-large is-warning" onClick={() => history.push(`${path}/village`)}>
+                        <span className="icon is-small">
+                            <i className="fas fa-users"></i>
+                        </span>
+                        <span>
+                            หมู่บ้าน
+                        </span>
+                    </button>
+                </div>
+                <div className="column">
+                    <button className="button is-large is-warning" onClick={() => history.push(`${path}/user`)}>
+                        <span className="icon is-small">
+                            <i className="fas fa-user-friends"></i>
+                        </span>
+                        <span>
+                            อสม.
                         </span>
                     </button>
                 </div>
